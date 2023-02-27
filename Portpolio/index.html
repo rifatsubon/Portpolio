@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portpolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bee591082f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+ <div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/loogo.png" class="logo">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Contact</a></li>
+                
+            </ul>
+        </nav>
+        <div class="header-text">
+            <h1>AR|VR Learner</h1>
+            <h1>Hi,I'm <span>Rifat</span></h1>
+            <h2>I Still Know <span>Nothing</span></h2>
+
+        </div>
+    </div>
+ </div>   
+ <!-----------about------------>
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user2.jpg">
+
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi,i ma Rifat Afser Chowdhury. I from Sunamgonj.Currently studing Daffodil International University. I am a hard-working and driven individual who isn't afraid to face a challenge.I'm passionate about 
+                my work and I know how to get the Relaxeing.I would describe myself as an open and honest person who doesn't 
+                believe in misleading other people and tries to be fair in everything I do.I am a hard-working and driven 
+                individual who isn't afraid to face a challenge.I'm passionate about my work and I know how to get the job done.
+                I would describe myself as an open andhonest person who doesn't believe in misleading other people and tries to
+                be fair in everything I do</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>AR/VR</span><br>Learning Unity/CreativeIP Platfrom</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>Game Development</span><br>Create Begginer level Game</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2022-Current</span><br>AR/VR Game Dev.Lab training DIU</li>
+                        <li><span>2022-Current</span><br>Create Web Application</li>
+                        <li><span>2022-Current</span><br>Practice in Unity</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2019-Fall</span><br>BSC in CSE, Daffodil Internation Univercity</li>
+                        <li><span>2016-1018</span><br>HSC,AMMC,Mysmenshing</li>
+                        <li><span>2009-2015</span><br>Janata Model HIgh School, Dhamapasha</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+ </div>
+ <!--------------Services------------->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-vr-cardboard"></i>
+                <h2>AR/VR Implemation</h2>
+                <p>In today’s world going to Vercual Reality based so I focus AR|VR Implemation.In immersive world view amd autofocusing that it. </p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Game Development</h2>
+                <p>Game is art and fashion, I worked some basic game development project and it is helpful to create multiple thing</p>
+                <a href="#">learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Working on web Engineering using html and css to build the front part and USing jss to create some web based application</p>
+                <a href="#">learn more</a>
+            </div>
+        </div>
+
+    </div>
+ </div>
+<!-------------------portfolio-------------->
+
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My works </h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Augmentad Reality Flow </h3>
+                    <p>This Project connects you the realistic 
+                    scenario on object helps of augmentedreality</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Augmentad Reality Virtual Control</h3>
+                    <h4>Zoombie Run</h4>
+                    <p>This Project connects you the realistic 
+                    scenario on object helps of augmentedreality</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>Microgame </h3>
+                    <p>This Project connects you the realistic 
+                    scenario on object helps of augmentedreality</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+
+    </script>
+
+
+
+
+</body>
+</html>
